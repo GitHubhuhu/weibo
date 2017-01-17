@@ -1,3 +1,6 @@
+weibo_crawler/
+src/main/resources/user.properties
+result.png
 target/
 mvnw.cmd
 !.mvn/wrapper/maven-wrapper.jar
