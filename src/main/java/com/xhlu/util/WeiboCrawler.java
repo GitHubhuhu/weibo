@@ -24,7 +24,7 @@ public class WeiboCrawler extends BreadthCrawler{
     public WeiboCrawler(String crawlPath, boolean autoParse) throws Exception {
         super(crawlPath, autoParse);
         /*获取新浪微博的cookie，账号密码以明文形式传输，请使用小号*/
-        cookie = WeiboCN.getSinaCookie("18080417397", "A336A336AA");
+        cookie = WeiboCN.getSinaCookie("用户名", "密码");
     }
 
     @Override
@@ -49,7 +49,7 @@ public class WeiboCrawler extends BreadthCrawler{
         crawler.setThreads(3);
         /*对某人微博前5页进行爬取*/
         for (int i = 1; i <= 5; i++) {
-            crawler.addSeed(new CrawlDatum("http://weibo.cn/zhouhongyi?vt=4&page=" + i)
+            crawler.addSeed(new CrawlDatum("http://weibo.cn/u/5977936133?vt=4&page=" + i)
                     .putMetaData("pageNum", i + ""));
         }
         crawler.start(1);
