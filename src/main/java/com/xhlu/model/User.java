@@ -18,7 +18,6 @@ import javax.persistence.Table;
 public class User {
 
     @Id
-    @GeneratedValue
     private Long uid;
     private String userName; //昵称
     private String gender; //性别

@@ -2,11 +2,7 @@ package com.xhlu;
 
 import cn.edu.hfut.dmic.webcollector.model.CrawlDatum;
 import com.xhlu.util.WeiboCrawler;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
 import org.junit.Test;
-
-import java.io.IOException;
 
 /**
  * <pre>
@@ -29,4 +25,5 @@ public class JsoupTest {
         }
         crawler.start(1);
     }
+
 }
